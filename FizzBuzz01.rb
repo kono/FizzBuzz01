@@ -1,16 +1,15 @@
 class FizzBuzz01
   def is_fizzbuzz(n)
-    if n==1
-      return "1"
+    retstr=""
+    if n % 3 == 0
+      retstr=retstr + "Fizz"
     end
-    if n==3
-      return "Fizz"
+    if n % 5 == 0
+      retstr=retstr + "Buzz"
     end
-    if n==5
-      return "Buzz"
+    if (n % 3 !=0)&& (n % 5 != 0)
+      retstr=retstr + n.to_s
     end
-    if n==15
-      return "FizzBuzz"
-    end
+    return retstr
   end
 end
