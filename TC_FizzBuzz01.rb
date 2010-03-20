@@ -1,5 +1,6 @@
 require 'test/unit'
 require 'fizzbuzz01'
+require 'kconv'
 
 $KCODE="SJIS"
 class TC_FizzBuzz01 < Test::Unit::TestCase
@@ -9,9 +10,9 @@ class TC_FizzBuzz01 < Test::Unit::TestCase
   end
   
   def test_is_fizzbuzz
-    assert(@obj.is_fizzbuzz(1)=="1","1‚ÌŽž‚É1‚Æprint‚³‚ê‚Ü‚¹‚ñ‚Å‚µ‚½B")
-    assert(@obj.is_fizzbuzz(3)=="Fizz","3‚ÌŽž‚ÉFizz‚Æprint‚³‚ê‚Ü‚¹‚ñ‚Å‚µ‚½B")
-    assert(@obj.is_fizzbuzz(5)=="Buzz","5‚ÌŽž‚ÉBuzz‚Æprint‚³‚ê‚Ü‚¹‚ñ‚Å‚µ‚½B")
-    assert(@obj.is_fizzbuzz(15)=="FizzBuzz","15‚ÌŽž‚ÉFizzBuzz‚Æprint‚³‚ê‚Ü‚¹‚ñ‚Å‚µ‚½B")
+    assert(@obj.is_fizzbuzz(1)=="1",Kconv.tosjis("1ã®æ™‚ã«1ã¨printã•ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚"))
+    assert(@obj.is_fizzbuzz(3)=="Fizz",Kconv.tosjis("3ã®æ™‚ã«Fizzã¨printã•ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚"))
+    assert(@obj.is_fizzbuzz(5)=="Buzz",Kconv.tosjis("5ã®æ™‚ã«Buzzã¨printã•ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚"))
+    assert(@obj.is_fizzbuzz(15)=="FizzBuzz",Kconv.tosjis("15ã®æ™‚ã«FizzBuzzã¨printã•ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚"))
   end
 end
