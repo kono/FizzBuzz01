@@ -1,5 +1,5 @@
 require 'test/unit'
-require 'fizzbuzz01'
+require 'FizzBuzz01'
 require 'kconv'
 
 $KCODE="SJIS"
