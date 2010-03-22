@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'test/unit'
 require 'FizzBuzz01'
 require 'kconv'
