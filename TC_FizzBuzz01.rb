@@ -3,7 +3,7 @@ require 'test/unit'
 require 'FizzBuzz01'
 require 'kconv'
 
-$KCODE="SJIS"
+$KCODE="UTF8"
 class TC_FizzBuzz01 < Test::Unit::TestCase
 
   def assert(status,msg)

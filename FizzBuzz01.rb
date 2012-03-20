@@ -2,7 +2,7 @@ class FizzBuzz01
   def is_fizzbuzz(n)
     retstr=""
     if n % 3 == 0
-      retstr=retstr + "Fizzz"
+      retstr=retstr + "Fizz"
     end
     if n % 5 == 0
       retstr=retstr + "Buzz"
