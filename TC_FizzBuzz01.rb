@@ -1,9 +1,10 @@
+# coding: utf-8
 require 'rubygems'
 require 'test/unit'
-require 'FizzBuzz01'
+require './FizzBuzz01'
 require 'kconv'
 
-$KCODE="UTF8"
+#$KCODE="UTF8"
 class TC_FizzBuzz01 < Test::Unit::TestCase
 
   def assert(status,msg)
